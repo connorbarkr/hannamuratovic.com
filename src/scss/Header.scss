@@ -1,0 +1,78 @@
+@import '_variables';
+
+.header-scrolled {
+  background-color: $header;
+  transition: all 0.25s ease-in-out 0s;
+}
+
+.header {
+  height: 75px;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  &-left, &-right__desktop {
+    display: flex;
+    flex-direction: row;
+    background: transparent;
+    align-items: center;
+  }
+
+  &-left {
+    justify-content: flex-start;
+    width: 20%;
+
+    &__logo {
+      height: 60px;
+      margin-left: 2rem;
+      margin-top: 1rem;
+    }
+  }
+
+  &-right__mobile {
+    display: none;
+
+    &-menu {
+      height: 40px;
+      margin-right: 2rem;
+      margin-top: 1rem;
+    }
+  }
+
+  &-right__desktop {
+    justify-content: flex-end;
+    width: 80%;
+
+    &-item {
+      font-family: $secondary-font;
+      color: $main;
+      font-size: 2.25em;
+      margin-right: 2rem;
+      font-weight: 500;
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .header {
+    &-right__mobile {
+      display: block;
+    }
+    &-right__desktop {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+  .header {
+    &-right__mobile {
+      display: none;
+    }
+    &-right__desktop {
+      display: flex;
+    }
+  }
+}

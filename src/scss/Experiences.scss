@@ -1,0 +1,169 @@
+@import '_variables.scss';
+
+.experiences {
+  height: auto !important;
+
+  &-header {
+    height: calc(0.2 * 100vh) !important;
+    margin-bottom: 3rem;
+  }
+  &-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+.experience {
+  margin-bottom: 6rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+
+  &-left {
+    height: 100%;
+    width: 38.2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &-right {
+    width: 61.8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &-title {
+    margin: 0rem;
+    margin-bottom: 1rem;
+    font-family: $main-font;
+    color: $main;
+    font-size: 2.5rem;
+  }
+  &-subtitle {
+    margin: 0rem;
+    font-family: $secondary-font;
+    color: $main;
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  &-text {
+    margin: 0rem;
+    font-family: $secondary-font;
+    color: $main;
+    font-size: 1.5rem;
+    margin-right: 8rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .experience {
+    flex-direction: column;
+    margin-bottom: 4rem;
+
+    &-left {
+      width: 85%;
+      align-items: flex-start;
+    }
+    &-right {
+      width: 85%;
+    }
+    &-title {
+      margin: 0rem;
+    }
+    &-subtitle {
+      margin: 0rem;
+      margin-bottom: 1.5rem;
+    }
+    &-text {
+      margin: 0rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+  .experience {
+    &-title {
+      font-size: 2.25em;
+    }
+    &-subtitle {
+      font-size: 2em;
+    }
+    &-text {
+      font-size: 2em;
+    }
+  }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 900px) {
+  .experience {
+    &-title {
+      font-size: 2.25em;
+    }
+    &-subtitle {
+      font-size: 1.75em;
+    }
+    &-text {
+      font-size: 1.75em;
+    }
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 700px) {
+  .experience {
+    &-title {
+      font-size: 2em;
+    }
+    &-subtitle {
+      font-size: 1.5em;
+    }
+    &-text {
+      font-size: 1.5em;
+    }
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 500px) {
+  .experience {
+    &-title {
+      font-size: 1.75em;
+    }
+    &-subtitle {
+      font-size: 1.5em;
+    }
+    &-text {
+      font-size: 1.5em;
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) and (min-height: 700px) {
+  .experience {
+    &-title {
+      font-size: 1.75em;
+    }
+    &-subtitle {
+      font-size: 1.5em;
+    }
+    &-text {
+      font-size: 1.5em;
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) and (max-height: 700px) {
+  .experience {
+    &-title {
+      font-size: 1.75em;
+    }
+    &-subtitle {
+      font-size: 1.5em;
+    }
+    &-text {
+      font-size: 1.5em;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@import './_variables.scss';
+
+.App {
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: $background;
+}
+
+@media only screen and (max-width: 1200px) {
+  .App {
+    min-height: inherit;
+  }
+}

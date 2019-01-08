@@ -1,0 +1,116 @@
+@import './_variables.scss';
+
+.landing {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &-header {
+    font-family: $main-font;
+    color: $main;
+    font-size: 5em;
+    margin: 0px;
+  }
+
+  &-subheader__group {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &-subheader {
+    font-family: $secondary-font;
+    margin: 0px;
+    color: $main;
+    font-size: 2em;
+    font-weight: 400;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .landing {
+    &-subheader__group {
+      flex-direction: column;
+    }
+    &-header {
+      text-align: center;
+    }
+    &-subheader {
+      text-align: center;
+    }
+  }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+  .landing {
+    &-header {
+      font-size: 4.5em;
+    }
+    &-subheader__group {
+      flex-direction: row;
+    }
+    &-subheader {
+      font-size: 1.75em;
+    }
+  }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 900px) {
+  .landing {
+    &-header {
+      font-size: 3.5em;
+    }
+    &-subheader__group {
+      flex-direction: row;
+    }
+    &-subheader {
+      font-size: 1.5em;
+    }
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 700px) {
+  .landing {
+    &-header {
+      font-size: 4em;
+    }
+    &-subheader {
+      font-size: 1.5em;
+    }
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 500px) {
+  .landing {
+    &-header {
+      font-size: 3.5em;
+    }
+    &-subheader {
+      font-size: 1.5em;
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) and (min-height: 700px) {
+  .landing {
+    &-header {
+      font-size: 3em;
+    }
+    &-subheader {
+      font-size: 1.5em;
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) and (max-height: 700px) {
+  .landing {
+    &-header {
+      font-size: 3em;
+    }
+    &-subheader {
+      font-size: 1.5em;
+    }
+  }
+}
