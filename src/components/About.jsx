@@ -6,7 +6,7 @@ import {ABOUT} from '../utils/constants.js';
 class About extends Component {
   render() {
     return (
-      <div className='about'>
+      <div className='about' ref={this.props.refProp}>
         <div className='about-header content-header'>
           <div className='content-header__wrapper'>
             <div className='content-header__line' />

@@ -26,7 +26,7 @@ class Experiences extends Component {
 
   render() {
     return (
-      <div className='experiences content'>
+      <div className='experiences content' ref={this.props.refProp}>
         <div className='content-header experiences-header'>
           <div className='content-header__wrapper'>
             <div className='content-header__line' />

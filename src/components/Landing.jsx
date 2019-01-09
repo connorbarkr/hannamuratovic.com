@@ -4,7 +4,7 @@ import '../scss/Landing.scss';
 class Landing extends Component {
   render() {
     return (
-      <div className='landing'>
+      <div className='landing' ref={this.props.refProp}>
         <h1 className='landing-header'>{'hanna muratovic'}</h1>
         <div className='landing-subheader__group'>
           <h3 className='landing-subheader'>{'electrical engineer.'}&nbsp;</h3>

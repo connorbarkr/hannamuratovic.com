@@ -21,7 +21,7 @@ class Projects extends Component {
 
   render() {
     return (
-      <div className='projects content'>
+      <div className='projects content' ref={this.props.refProp}>
         <div className='content-header projects-header'>
           <div className='content-header__wrapper'>
             <div className='content-header__line' />

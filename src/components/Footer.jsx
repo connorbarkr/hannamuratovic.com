@@ -8,8 +8,12 @@ class Footer extends Component {
     return (
       <div className='footer'>
         <div className='footer-icons'>
-          <img src={email} alt='email' />
-          <img src={github} alt='github' />
+          <a href='mailto:h2999mur@edu.uwaterloo.ca'>
+            <img src={email} alt='email' />
+          </a>
+          <a href='https://github.com/HannaMuratovic'>
+            <img src={github} alt='github' />
+          </a>
         </div>
       </div>
     );
