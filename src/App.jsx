@@ -12,22 +12,22 @@ class App extends Component {
   constructor(props) {
     super(props);
 
-    this.refs = [
-      React.createRef(),
-      React.createRef(),
-      React.createRef(),
-      React.createRef(),
-    ];
+    this.refs = {
+      landingRef: React.createRef(),
+      aboutRef: React.createRef(),
+      projectsRef: React.createRef(),
+      experiencesRef: React.createRef(),
+    }
   }
 
   render() {
     return (
       <div className="App">
-        <Header refsProp={this.refs}/>
-        <Landing refProp={this.refs[0]} />
-        <About refProp={this.refs[1]} />
-        <Projects refProp={this.refs[2]} />
-        <Experiences refProp={this.refs[3]} />
+        <Header refsProp={this.refs} />
+        <Landing refProp={this.refs.landingRef} />
+        <About refProp={this.refs.aboutRef} />
+        <Projects refProp={this.refs.projectsRef} />
+        <Experiences refProp={this.refs.experiencesRef} />
         <Footer />
       </div>
     );
