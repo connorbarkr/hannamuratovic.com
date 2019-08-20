@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import _ from 'lodash';
 
+import Sidenav from './components/Sidenav';
 import Landing from './components/Landing';
 import Header from './components/Header';
 import About from './components/About';
@@ -41,7 +42,7 @@ class App extends Component {
       case 'projects':
         return this.projectsRef;
       case 'experience':
-        return this.experienceRef;
+        return this.experiencesRef;
       default:
         return;
     }
@@ -50,7 +51,7 @@ class App extends Component {
   hashScroll = (location = null) => {
     if (location) {
       window.location.hash = location;
-      scrollTo(this.decodeHash(location));
+      scrollTo(this.decodeHash(location), false);
       return;
     }
     window.location.hash = window.decodeURIComponent(window.location.hash);
@@ -72,6 +73,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <Sidenav />
         <Header scrollProp={this.hashScroll} />
         <Landing refProp={this.landingRef} />
         <About refProp={this.aboutRef} />

@@ -13,7 +13,7 @@ class Header extends Component {
   checkScroll = (event) => {
     let scrollTop = window.scrollY;
 
-    if (scrollTop > 0) {
+    if (scrollTop > 1) {
       this.isScrolled = true;
       this.forceUpdate();
     } else {
@@ -23,11 +23,11 @@ class Header extends Component {
   }
 
   isScrolled = false;
-// onClick={this.props.refsProp[0] ? scrollTo(this.props.refsProp[0], 'auto') : console.log("hi")}
+
   render() {
     return (
       <div className={`header ${this.isScrolled ? 'header-scrolled' : ''}`}>
-        <div className='header-left' >
+        <div className='header-left' onClick={() => { scrollTo(0) }}>
           <img className='header-left__logo' src={logo} alt='logo' />
         </div>
         <div className='header-right__mobile'>
@@ -35,8 +35,8 @@ class Header extends Component {
         </div>
         <div className='header-right__desktop'>
           <button className='header-right__desktop-item' href='#about' onClick={() => { this.props.scrollProp('about') }}>{'about me'}</button>
-          <button className='header-right__desktop-item' href='#projects'>{'projects'}</button>
-          <button className='header-right__desktop-item' href='#experience'>{'experience'}</button>
+          <button className='header-right__desktop-item' href='#projects' onClick={() => { this.props.scrollProp('projects') }}>{'projects'}</button>
+          <button className='header-right__desktop-item' href='#experience' onClick={() => { this.props.scrollProp('experience') }}>{'experience'}</button>
           <button className='header-right__desktop-item' href='link.com'>{'resume'}</button>
         </div>
       </div>

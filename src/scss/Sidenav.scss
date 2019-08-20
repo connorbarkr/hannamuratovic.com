@@ -1,0 +1,9 @@
+@import '_variables';
+
+.sidenav {
+  height: 100vh;
+  width: 60vw;
+  position: fixed;
+  background-color: $header;
+  z-index: 999
+}
