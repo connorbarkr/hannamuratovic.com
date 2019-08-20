@@ -25,9 +25,8 @@
     width: 20%;
 
     &__logo {
-      height: 60px;
+      height: 50px;
       margin-left: 2rem;
-      margin-top: 1rem;
     }
   }
 
@@ -46,22 +45,19 @@
     width: 80%;
 
     &-item {
+      padding: 0rem;
+      background: transparent;
+      outline: none;
+      border: none;
       font-family: $secondary-font;
       color: $main;
       font-size: 2.25em;
       margin-right: 2rem;
       font-weight: 500;
     }
-  }
-}
 
-@media only screen and (max-width: 1200px) {
-  .header {
-    &-right__mobile {
-      display: block;
-    }
-    &-right__desktop {
-      display: none;
+    &-item:hover {
+      cursor: pointer;
     }
   }
 }

@@ -2,7 +2,8 @@ $background: #1A91A7;
 $header: #01636F;
 $main: #FFD600;
 
-$main-font: "Bungee Inline", cursive;
+$main-font: "Bungee Inline";
+$main-font-2: "Bungee";
 $secondary-font: 'Titillium Web', sans-serif;
 
 .content {
@@ -26,6 +27,8 @@ $secondary-font: 'Titillium Web', sans-serif;
     }
     &__text {
       color: $main;
+      font-weight: 400;
+      font-style: normal;
       font-family: $main-font;
       font-size: 3rem;
       margin: 0rem;
